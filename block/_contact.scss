@@ -1,0 +1,114 @@
+.contact {
+  width: 100%;
+  height: 592px;
+  margin-top: 150px;
+
+  &__cont {
+    position: relative;
+    width: 1340px;
+    height: 591px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    position: relative;
+    z-index: 2;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 77px;
+    color: #1a1930;
+  }
+
+  &__card {
+    &__p1 {
+        margin-top: 398px;
+        width: 459px;
+      font-family: "Prompt";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+      color: #2d2b5c;
+    }
+  }
+
+  &__p2 {
+    margin-top: 19px;
+    font-family: "Prompt";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #abaabb;
+  }
+
+  &__big__circle{
+        position: absolute;
+        top: -50px;
+        left: -70px;
+    }
+
+    &__small__circle{
+        position: absolute;
+        top: 25px;
+        right: -60px;
+        z-index: 1;
+    }
+}
+
+.form{
+    width: 640px;
+    height: 465px;
+    display: flex;
+    flex-direction: column;
+
+    &__hr{
+        width: 700px;
+        height: 2px;
+        background-color: #E7E5FF;
+        border: none;    
+    }
+
+    &__label{
+        position: relative;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+font-family: 'Prompt';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 25px;
+color: #2D2B5C;
+z-index: 2;
+    }
+
+    &__input{
+width: 640px;
+height: 55px;
+padding: 0 32px;
+background: rgba(255, 255, 255, 0.4);
+border: 2px solid rgba(255, 255, 255, 0.4);
+box-shadow: 0px 4px 20px rgba(193, 193, 193, 0.3);
+border-radius: 8px;
+font-family: 'Prompt';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 25px;
+color: #C1C1C1;
+    }
+
+    &__btn{
+        @extend %purple-btn;
+        margin-top: 50px;
+        height: 60px;
+        padding: 20px;
+    }
+
+}

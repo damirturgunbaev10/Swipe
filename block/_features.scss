@@ -1,0 +1,106 @@
+.features {
+  width: 100%;
+  height: 778px;
+  margin-top: 150px;
+
+  &__cont {
+    position: relative;
+    width: 1340px;
+    height: 778px;
+    margin: auto;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__square {
+    position: absolute;
+    z-index: 1;
+    left: -40px;
+    top: 390px;
+  }
+
+  &__circle {
+    position: absolute;
+    top: 585px;
+    left: 463px;
+    z-index: 1;
+  }
+
+  &__cylinder {
+    position: absolute;
+    top: 270px;
+    left: 947px;
+    z-index: 1;
+  }
+
+  &__title {
+    width: 553px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 77px;
+    color: #2d2b5c;
+  }
+
+  &__btn {
+    @extend %purple-btn;
+    width: 139px;
+    height: 60px;
+  }
+
+  &__bottom {
+    padding-top: 50px;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 200px auto;
+    width: 1320px;
+    height: 468px;
+    background: rgba(255, 255, 255, 0.6);
+    border: 1px solid #fbfbff;
+    box-shadow: 0px 4px 20px rgba(193, 193, 193, 0.3);
+    border-radius: 10px;
+    z-index: 2;
+  }
+
+  &__block {
+    &__title {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 34px;
+      line-height: 38px;
+      color: #1a1930;
+    }
+  }
+
+  &__text {
+    margin-top: 25px;
+    width: 320px;
+    font-family: "Prompt";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #2d2b5c;
+  }
+
+  &__li{
+    @extend %li;
+    width: 320px;
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  &__hr{
+    width: 2px;
+    height: 360px;
+    background-color: #F1F0F7;
+    border: none;
+  }
+}

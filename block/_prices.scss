@@ -1,0 +1,106 @@
+.prices {
+  width: 100%;
+  height: 653px;
+  margin-top: 250px;
+
+  &__cont {
+    position: relative;
+    width: 1340px;
+    height: 653px;
+    margin: auto;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1320px;
+  }
+
+  &__title h2 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 77px;
+    color: #2d2b5c;
+  }
+
+  &__hr {
+    width: 700px;
+    height: 2px;
+    border: none;
+    background-color: #e7e5ff;
+  }
+
+  &__bottom{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  &__card {
+    margin-top: 80px;
+    width: 643px;
+    height: 496px;
+    padding: 45px 52px;
+    background: rgba(255, 255, 255, 0.6);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0px 4px 20px rgba(193, 193, 193, 0.3);
+    border-radius: 10px;
+
+    &__title {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 44px;
+      line-height: 50px;
+      color: #2d2b5c;
+    }
+
+    &__bottom {
+      margin-top: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &__price {
+        font-family: "Prompt";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 79px;
+        line-height: 88px;
+        color: #2d2b5c;
+      }
+
+      &__date {
+        margin-top: 60px;
+        margin-left: -180px;
+        font-family: "Prompt";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: #abaabb;
+      }
+
+      &__btn {
+        @extend %purple-btn;
+        width: 139px;
+        height: 60px;
+      }
+    }
+  }
+
+  &__ul {
+    margin-top: 46px;
+  }
+
+  &__li {
+    margin-top: 10px;
+  }
+
+  &__link {
+    @extend %li;
+  }
+}
