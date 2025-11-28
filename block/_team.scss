@@ -1,0 +1,101 @@
+.team {
+  width: 100%;
+  height: 864px;
+  margin-top: 150px;
+
+  &__cont {
+    width: 1320px;
+    height: 864px;
+    margin: auto;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__title {
+      width: 512px;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 70px;
+      line-height: 77px;
+      color: #1a1930;
+    }
+
+    &__purple__btn {
+      @extend %purple-btn;
+      width: 130px;
+      height: 60px;
+      margin-left: 30px;
+    }
+
+    &__trans__btn {
+      @extend %transparent-btn;
+      width: 205px;
+      height: 60px;
+    }
+  }
+
+  &__bottom {
+    position: relative;
+    margin-top: 90px;
+    width: 1300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  &__card {
+    width: 265px;
+    height: 297px;
+
+    &__name {
+      margin-top: 16px;
+      font-family: "Prompt";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 22px;
+      text-align: center;
+      color: #1a1930;
+    }
+
+    &__desc {
+      margin-top: 12px;
+      font-family: "Prompt";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+      text-align: center;
+      color: #2d2b5c;
+    }
+  }
+
+  &__left__arrow{
+    position: absolute;
+    top: 280px;
+    left: 0;
+  }
+
+  &__left__arrow:hover{
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 15px;
+  }
+
+  &__right__arrow{
+    position: absolute;
+    top: 280px;
+    right: 0;
+  }
+
+    &__right__arrow:hover{
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 15px;
+  }
+}

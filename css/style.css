@@ -35,7 +35,7 @@ li:hover {
   z-index: 1;
 }
 
-.nav__btn {
+.media__btn, .team__top__trans__btn, .nav__btn {
   background: rgba(255, 255, 255, 0.4);
   border: 2px solid rgba(255, 255, 255, 0.4);
   box-shadow: 0px 4px 20px rgba(193, 193, 193, 0.3);
@@ -50,7 +50,7 @@ li:hover {
   transition: transform 0.5s ease-out;
 }
 
-.nav__btn:hover {
+.media__btn:hover, .team__top__trans__btn:hover, .nav__btn:hover {
   transform: scale(1.1);
   opacity: 0.6;
   background-color: #ffb68b;
@@ -58,11 +58,11 @@ li:hover {
   border: 2px solid rgb(255, 86, 86);
 }
 
-.nav__btn:active {
+.media__btn:active, .team__top__trans__btn:active, .nav__btn:active {
   transform: scale(0.7);
 }
 
-.form__btn, .prices__card__bottom__btn, .features__btn, .intro__btn {
+.press__btn, .team__top__purple__btn, .form__btn, .prices__card__bottom__btn, .features__btn, .intro__btn {
   background: #6259EA;
   border-radius: 5px;
   border: none;
@@ -76,18 +76,18 @@ li:hover {
   transition: transform 0.5s ease-out;
 }
 
-.form__btn:hover, .prices__card__bottom__btn:hover, .features__btn:hover, .intro__btn:hover {
+.press__btn:hover, .team__top__purple__btn:hover, .form__btn:hover, .prices__card__bottom__btn:hover, .features__btn:hover, .intro__btn:hover {
   transform: scale(1.1);
   border: 2px solid #6259EA;
   background-color: #FFFFFF;
   color: #6259EA;
 }
 
-.form__btn:active, .prices__card__bottom__btn:active, .features__btn:active, .intro__btn:active {
+.press__btn:active, .team__top__purple__btn:active, .form__btn:active, .prices__card__bottom__btn:active, .features__btn:active, .intro__btn:active {
   transform: scale(0.7);
 }
 
-.prices__link, .features__li, .nav__link {
+.footer__link, .prices__link, .features__li, .nav__link {
   font-family: "Prompt";
   font-style: normal;
   font-weight: 400;
@@ -99,25 +99,25 @@ li:hover {
 /* ------------ VARIABLES ------------ */
 :root {
   /* COLORS */
-  --color: #9176FF;
+  --color: #9176ff;
   --dark-color: #2b2b2b;
   --dark-icon-color: #fff;
   --light-color: #f7f7f7;
-  --light-icon-color: #FFDE59;
+  --light-icon-color: #ffde59;
 }
 
 /* -------------- BUTTON -------------- */
 .btn {
   background-color: #fff;
-  width: 12em;
-  height: 6em;
+  width: 8em;
+  height: 4em;
   border-radius: 10em;
   padding: 0 0.5em;
   opacity: 0.5;
   box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1), inset 0 8px 8px rgba(0, 0, 0, 0.1), inset 0 -4px 4px rgba(0, 0, 0, 0.1);
-  position: fixed;
+  position: sticky;
   top: 600px;
-  right: 40px;
+  right: 10px;
   z-index: 4;
   display: flex;
   align-items: center;
@@ -126,8 +126,8 @@ li:hover {
 
 .btn__indicator {
   background-color: #fff;
-  width: 5em;
-  height: 5em;
+  width: 3em;
+  height: 3em;
   border-radius: 50%;
   position: absolute;
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
@@ -167,7 +167,7 @@ body.darkmode {
 }
 
 .darkmode .btn__indicator {
-  transform: translateX(6em);
+  transform: translateX(4em);
   background-color: var(--dark-color);
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
 }
@@ -209,6 +209,7 @@ header {
   z-index: 2;
 }
 .intro__cont {
+  position: relative;
   margin: auto;
   width: 1320px;
   height: 554px;
@@ -750,4 +751,330 @@ header {
   margin-top: 50px;
   height: 60px;
   padding: 20px;
+}
+
+.team {
+  width: 100%;
+  height: 864px;
+  margin-top: 150px;
+}
+.team__cont {
+  width: 1320px;
+  height: 864px;
+  margin: auto;
+}
+.team__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.team__top__title {
+  width: 512px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 77px;
+  color: #1a1930;
+}
+.team__top__purple__btn {
+  width: 130px;
+  height: 60px;
+  margin-left: 30px;
+}
+.team__top__trans__btn {
+  width: 205px;
+  height: 60px;
+}
+.team__bottom {
+  position: relative;
+  margin-top: 90px;
+  width: 1300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.team__card {
+  width: 265px;
+  height: 297px;
+}
+.team__card__name {
+  margin-top: 16px;
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  text-align: center;
+  color: #1a1930;
+}
+.team__card__desc {
+  margin-top: 12px;
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #2d2b5c;
+}
+.team__left__arrow {
+  position: absolute;
+  top: 280px;
+  left: 0;
+}
+.team__left__arrow:hover {
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+.team__right__arrow {
+  position: absolute;
+  top: 280px;
+  right: 0;
+}
+.team__right__arrow:hover {
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+.faq {
+  width: 100%;
+  height: 895px;
+  margin-top: 200px;
+}
+.faq__cont {
+  position: relative;
+  width: 1340px;
+  height: 895px;
+  margin: auto;
+}
+.faq__title {
+  width: 606px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 77px;
+  color: #1A1930;
+}
+.faq__img {
+  position: absolute;
+  top: -200px;
+  right: 0px;
+}
+.faq__questions {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.faq__questions__text {
+  width: 710px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 50px;
+  color: #2D2B5C;
+}
+.faq__question {
+  display: flex;
+  align-items: center;
+}
+.faq__arrow {
+  margin-right: 45px;
+}
+.faq__hr {
+  width: 1300px;
+  height: 2px;
+  background-color: #EAE8FF;
+  border: none;
+}
+
+.footer {
+  width: 100%;
+  height: 429px;
+  background-color: #1a1930;
+}
+.footer__cont {
+  margin: auto;
+  width: 1320px;
+  height: 277px;
+  margin-top: 85px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  width: 343px;
+  height: 277px;
+}
+.footer__text {
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  color: #ffffff;
+}
+.footer__right {
+  width: 660px;
+  height: 277px;
+}
+.footer__hr {
+  width: 700px;
+}
+.footer__uls {
+  display: flex;
+  justify-content: space-around;
+  padding: 73px;
+}
+.footer__link {
+  margin-top: 9px;
+}
+
+.press {
+  width: 100%;
+  height: 757px;
+  margin-top: 150px;
+}
+.press__cont {
+  width: 1340px;
+  height: 757px;
+  margin: auto;
+}
+.press__top {
+  width: 1340px;
+  height: 77px;
+  display: flex;
+  justify-content: space-between;
+}
+.press__title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 77px;
+  color: #1a1930;
+}
+.press__btn {
+  width: 157px;
+  height: 60px;
+}
+.press__bottom {
+  margin: 50px;
+  width: 1096px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+.press__hr {
+  width: 2px;
+  height: 600px;
+  background-color: #e7e5ff;
+  border: none;
+}
+.press__card {
+  width: 418px;
+  height: 600px;
+}
+.press__card__btn {
+  width: 150px;
+  height: 30px;
+  margin-top: 30px;
+  background: #e7e5ff;
+  border-radius: 5px;
+  border: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #2d2b5c;
+}
+.press__card__title {
+  width: 383px;
+  margin-top: 16px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 42px;
+  color: #1A1930;
+}
+.press__card__link {
+  margin: 38px;
+  display: flex;
+  gap: 10px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #1A1930;
+}
+
+.media {
+  width: 100%;
+  height: 371px;
+  margin-top: 100px;
+}
+.media__cont {
+  position: relative;
+  width: 1340px;
+  height: 371px;
+  margin: auto;
+}
+.media__top {
+  width: 1340px;
+  height: 77px;
+  display: flex;
+  justify-content: space-between;
+}
+.media__title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 77px;
+  color: #1A1930;
+}
+.media__bottom {
+  margin: 70px auto;
+  width: 1100px;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+.media__btn {
+  width: 207px;
+  height: 60px;
+}
+.media__left__arrow {
+  position: absolute;
+  top: 200px;
+  left: 0px;
+}
+.media__left__arrow:hover {
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+.media__right__arrow {
+  position: absolute;
+  top: 200px;
+  right: 0px;
+}
+.media__right__arrow:hover {
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 15px;
 }/*# sourceMappingURL=style.css.map */
